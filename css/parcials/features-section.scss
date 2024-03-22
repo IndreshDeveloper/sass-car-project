@@ -1,0 +1,113 @@
+#features-section {
+    width: 100%;
+    padding: 108px 0;
+
+    @media screen and (max-width: $xl-breakpoint) {
+        padding: 90px 0;
+    }
+
+    @media screen and (max-width: $lg-breakpoint) {
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: $md-breakpoint) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: $sm-breakpoint) {
+        padding: 60px 0;
+    }
+
+    .features {
+        gap: 30px;
+
+        @media screen and (max-width: $md-breakpoint) {
+            text-align: center;
+        }
+        
+        @media screen and (max-width: $sm-breakpoint) {
+            gap: 15px;
+        }
+
+        .feature-col {
+            width: calc(33.33% - 20px);
+            &:nth-child(4){
+                display: none;
+            }
+
+            @media screen and (max-width: $lg-breakpoint) {
+                width: calc(50% - 15px);
+
+                &:nth-child(4){
+                    display: block;
+                }
+            }
+
+            @media screen and (max-width: $md-breakpoint) {
+                width: 100%;
+                border: 1px solid #efac146e;
+                border-radius: 10px;
+                padding: 10px 0;
+                &:nth-child(4){
+                    display: none;
+                }
+            }
+
+            .f-car-block {
+                width: 100%;
+                margin-bottom: 30px;
+
+                @media screen and (max-width: $xl-breakpoint) {
+                    margin-bottom: 25px;
+                }
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    margin-bottom: 20px;
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            h5{
+                @media screen and (max-width: $xl-breakpoint) {
+                    font-size: 21px;
+                }
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    font-size: 19px;
+                }
+            }
+
+            h4 {
+                padding: 10px 0 11px 0;
+
+                @media screen and (max-width: $xl-breakpoint) {
+                    font-size: 21px;
+                }
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    font-size: 20px;
+                    padding: 7px 0 8px 0;
+                }
+            }
+
+            p{
+                @media screen and (max-width: $xl-breakpoint) {
+                    line-height: 23px;
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    max-width: 440px;
+                    margin: 0 auto;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

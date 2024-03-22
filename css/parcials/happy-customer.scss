@@ -1,0 +1,262 @@
+#happy-customer {
+    width: 100%;
+    position: relative;
+    padding: 206px 0 215px 0;
+
+    @media screen and (max-width: $xl-breakpoint) {
+        padding: 80px 0 85px 0;
+    }
+
+    @media screen and (max-width: $md-breakpoint) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: $sm-breakpoint) {
+        padding: 60px 0;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: url(../images/young-businessmen.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(17, 17, 17, 0.59);
+    }
+
+    .happy-customer-row {
+        position: relative;
+        z-index: 1;
+
+        @media screen and (max-width: $md-breakpoint) {
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: $sm-breakpoint) {
+            gap: 35px;
+        }
+
+        .h-customer-col1 {
+            width: 60%;
+
+            @media screen and (max-width: $md-breakpoint) {
+                width: 100%;
+            }
+
+            .ht-block {
+                @media screen and (max-width: $md-breakpoint) {
+                    text-align: center;
+                }
+
+                h4 {
+                    font-size: $small-fontsize;
+                    font-family: $roboto-fontfamily;
+                    color: $secondary-color;
+                    font-weight: $regular-font-weight;
+                    margin-bottom: 30px;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        margin-bottom: 15px;
+                    }
+                    
+                    @media screen and (max-width: $sm-breakpoint) {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                h2 {
+                    color: $secondary-color;
+                    max-width: 400px;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        font-size: 34px;
+                        line-height: 45px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        max-width: inherit;
+                        font-size: 31px;
+                    }
+
+                    @media screen and (max-width: $sm-breakpoint) {
+                        font-size: 30px;
+                    }
+                }
+
+                p {
+                    color: $secondary-color;
+                    max-width: 632px;
+                    padding: 25px 0 35px 0;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        padding: 22px 0 32px 0;
+                        line-height: 24px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        padding: 20px 0 30px 0;
+                        max-width: 410px;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        max-width: inherit;
+                        padding: 15px 0 25px 0;
+                    }
+
+                    @media screen and (max-width: $sm-breakpoint) {
+                        padding: 10px 0 20px 0;
+                    }
+                }
+
+                a {
+                    transition: color 0.4s linear;
+                    position: relative;
+                    z-index: 99;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        padding: 12px 30px;
+                        font-size: 15px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        font-size: 14px;
+                    }
+
+                    @media screen and (max-width: $sm-breakpoint) {
+                        padding: 10px 30px;
+                    }
+
+                    &:hover {
+                        color: $yellow-color;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: $secondary-color;
+                        transition: transform 0.5s;
+                        transform-origin: 0 0;
+                        border-radius: 30px;
+                        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+                        transform: scaleX(0);
+                        z-index: -1;
+                    }
+
+                    &:hover::before {
+                        transform: scaleX(1);
+                    }
+
+                    i {
+                        margin-top: 7px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+
+        .h-customer-col2 {
+            @media screen and (max-width: $sm-breakpoint) {
+                width: 100%;
+            }
+            .time-table-block {
+                background: $secondary-color;
+                border-radius: 30px;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                padding: 35px 47px 40px 30px;
+                position: relative;
+                left: 55px;
+
+                @media screen and (max-width: $xl-breakpoint) {
+                    padding: 30px 40px 35px 25px;
+                    left: 55px;
+                }
+
+                @media screen and (max-width: $lg-breakpoint) {
+                    left: 7px;
+                }
+
+                @media screen and (max-width: $sm-breakpoint) {
+                    left: 0;
+                }
+
+                h6 {
+                    font-size: $extra-small-font-size;
+                    color: $dark-black;
+                    font-family: $roboto-fontfamily;
+                    font-weight: $medium-font-weight;
+                    line-height: $regular-linehight;
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    font-size: 16px;
+                }
+
+                ul {
+                    gap: 8px;
+                    margin-top: 35px;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        margin-top: 30px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        margin-top: 20px;
+                    }
+
+                    li {
+                        font-size: $extra-small-font-size;
+                        font-family: $roboto-fontfamily;
+                        color: $primary-color;
+                        font-weight: $regular-font-weight;
+                        line-height: $regular-linehight;
+                        display: flex;
+                        align-items: center;
+
+                        @media screen and (max-width: $lg-breakpoint) {
+                            font-size: 12px;
+                        }
+
+                        @media screen and (max-width: $md-breakpoint) {
+                            font-size: 15px;
+                        }
+
+                        i {
+                            font-size: 15px;
+                            color: $yellow-color;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

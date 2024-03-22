@@ -1,0 +1,14 @@
+@mixin fonts($size, $fontfamily, $weight, $color, $height) {
+    font-size: $size;
+    font-family: $fontfamily;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+}
+
+@mixin color($padding, $bg, $radious, $block){
+    padding: $padding;
+    background: $bg;
+    border-radius: $radious;
+    display: $block;
+}

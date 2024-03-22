@@ -1,0 +1,7 @@
+body{padding: 0;margin: 0;width: 100%;}
+
+*{padding: 0;margin: 0;text-decoration: $text-d;list-style: $text-d;border: $text-d;outline: $text-d;box-sizing: $box-s;vertical-align: $ver-align;}
+
+.container{width: 100%;padding: 0 $gx;margin: 0 auto;max-width: 1170px;}
+
+.row{display: $d-flex; flex-wrap: $flex-wrap;}

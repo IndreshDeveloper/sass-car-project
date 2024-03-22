@@ -1,0 +1,214 @@
+#taxi-service {
+    width: 100%;
+    background: #F5F5F5;
+    padding: 90px 0;
+
+    @media screen and (max-width: $xl-breakpoint) {
+        padding: 80px 0;
+    }
+
+    @media screen and (max-width: $md-breakpoint) {
+        padding: 70px 0;
+    }
+
+    @media screen and (max-width: $sm-breakpoint) {
+        padding: 60px 0;
+    }
+
+    .taxi-servises-row {
+        gap: 36px;
+
+        @media screen and (max-width: $lg-breakpoint) {
+            gap: 45px;
+        }
+
+        @media screen and (max-width: $md-breakpoint) {
+            gap: 40px;
+        }
+
+        .service-block-col {
+            width: calc(50% - 18px);
+
+            @media screen and (max-width: $lg-breakpoint) {
+                width: 100%;
+            }
+
+            .servie-text-block {
+                @media screen and (max-width: $md-breakpoint) {
+                    text-align: center;
+                }
+
+                h5 {
+                    font-weight: $regular-font-weight;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        font-size: 21px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        font-size: 20px;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        font-size: 19px;
+                    }
+                }
+
+                h2 {
+                    margin: $hs-py;
+                    color: $dark-black;
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        font-size: 34px;
+                        margin: 15px 0;
+                        line-height: 45px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        font-size: 32px;
+                        line-height: 40px;
+                        margin: 13px 0;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        font-size: 31px;
+                        margin: 10px 0;
+                    }
+
+                    @media screen and (max-width: $sm-breakpoint) {
+                        font-size: 30px;
+                    }
+                }
+
+                p {
+                    padding-bottom: 5px;
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .extra-block {
+                @media screen and (max-width: $lg-breakpoint) {
+                    gap: 15px;
+                }
+
+                @media screen and (max-width: $md-breakpoint) {
+                    gap: 0;
+                }
+
+                .features-block {
+                    background: $secondary-color;
+                    border-radius: 15px;
+                    padding: 24px 52px 28px 15px;
+                    margin-top: 40px;
+                    box-shadow: 0 3px 2px $light-grey-color;
+                    transition: all ease 0.5s;
+
+
+                    @media screen and (max-width: $xl-breakpoint) {
+                        margin-top: 30px;
+                        padding: 23px 12px 24px 10px;
+                    }
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        width: calc(50% - 7.5px);
+                        padding: 20px 12px 20px 10px;
+                        margin-top: 25px;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        width: 100%;
+                        margin-top: 22px;
+                    }
+
+                    .f-icon {
+                        margin-right: 17px;
+
+                        @media screen and (max-width: $xl-breakpoint) {
+                            margin-right: 15px;
+                        }
+                    }
+
+                    .features-text-block {
+                        p {
+                            padding-top: 15px;
+                            color: $light-grey-color;
+                            transition: all ease 0.5s;
+
+                            @media screen and (max-width: $lg-breakpoint) {
+                                padding-top: 10px;
+                            }
+
+                            @media screen and (max-width: $md-breakpoint) {
+                                line-height: 22px;
+                            }
+                        }
+
+                        h4 {
+
+                            transition: all ease 0.5s;
+
+                            @media screen and (max-width: $xl-breakpoint) {
+                                font-size: 21px;
+                                line-height: 23px;
+                            }
+
+                            @media screen and (max-width: $lg-breakpoint) {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        background: $yellow-color;
+
+                        .f-icon {
+                            img {
+                                filter: brightness(0) invert(1);
+                            }
+                        }
+
+                        .features-text-block {
+                            p {
+                                color: $secondary-color;
+                            }
+
+                            h4 {
+                                color: $secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .service-block-col {
+            .hat-image-block {
+                &:nth-child(2){
+                    display: none;
+                }
+                @media screen and (max-width: $lg-breakpoint) {
+                    &:nth-child(2) {
+                        margin-left: 10px;
+                        display: block;
+                    }
+                }
+                
+                @media screen and (max-width: $md-breakpoint) {
+                    &:nth-child(2){
+                        display: none;
+                    }
+                }
+
+                img {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

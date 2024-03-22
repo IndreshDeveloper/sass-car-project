@@ -1,0 +1,88 @@
+#header-section {
+    padding: $h-py;
+
+    @media screen and (max-width: $md-breakpoint) {
+        padding: 10px 0;
+    }
+
+    .header-row {
+        justify-content: space-between;
+
+        .header-logo {
+            width: 50%;
+
+            @media screen and (max-width: $lg-breakpoint) {
+                width: 30%;
+            }
+        }
+
+        .navigation {
+            width: 50%;
+
+            @media screen and (max-width: $lg-breakpoint) {
+                width: 70%;
+            }
+
+            @media screen and (max-width: $md-breakpoint) {
+                display: none;
+                position: absolute;
+                left: 0px;
+                top: 78px;
+                z-index: 99;
+                width: 100%;
+                height: calc(100vh - 78px);
+                background: $secondary-color;
+                padding: 20px 15px;
+                border-top: 1px solid $yellow-color;
+                box-shadow: 10px 0 5px #bbb0b075;
+            }
+
+            ul {
+                &.menu {
+                    gap: 35px;
+
+                    @media screen and (max-width: $lg-breakpoint) {
+                        gap: 30px;
+                    }
+
+                    @media screen and (max-width: $md-breakpoint) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                }
+
+                li {
+                    a {
+                        @media screen and (max-width: $md-breakpoint) {
+                            color: $yellow-color;
+                        }
+
+                        transition: all ease 0.5s;
+
+                        &.active {
+                            color: $yellow-color;
+                        }
+
+                        &:hover {
+                            color: $yellow-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .menu-bar {
+            display: none;
+
+            @media screen and (max-width: $md-breakpoint) {
+                display: block;
+                font-size: 20px;
+                font-family: $roboto-fontfamily;
+                font-weight: 600;
+                color: $yellow-color;
+                border: 1px solid $yellow-color;
+                padding: 5px;
+            }
+        }
+    }
+}

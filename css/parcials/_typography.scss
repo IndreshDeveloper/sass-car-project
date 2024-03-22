@@ -1,0 +1,82 @@
+.d-flex {
+    display: flex;
+}
+
+.align-items-base{
+    align-items: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.f-direction {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-bw {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: $secondary-color;
+}
+
+.btn {
+    @include fonts($small-fontsize, $roboto-fontfamily, $regular-font-weight, $secondary-color, $btn-linehight);
+    @include color(16px 37px, $yellow-color, 30px, inline-block);
+}
+
+
+
+h1 {
+    @include fonts($large-fontsize, $raleway-fontfamily, $extrabold-font-weight, $secondary-color, $extralarge-linehight);
+}
+
+h2 {
+    @include fonts($medium-fontsize, $raleway-fontfamily, $semibold-font-weight, $primary-color, $bold-linehight );
+}
+
+h3 {
+    @include fonts($extra-medium-fsize, $roboto-fontfamily, $medium-font-weight, $h-grey-color, $medium-linehight);
+}
+
+h4 {
+    @include fonts($h-medium-fontsize, $raleway-fontfamily, $semibold-font-weight, $primary-color, $regular-linehight);
+}
+
+h5 {
+    @include fonts($h-medium-fontsize, $roboto-fontfamily, $semibold-font-weight, $yellow-color, $small-linehight);
+}
+
+p {
+    @include fonts($small-fontsize, $roboto-fontfamily, $regular-font-weight, $primary-color, $small-linehight);
+}
+
+span {
+    @include fonts($s-fontsize, $roboto-fontfamily, $medium-font-weight, $yellow-color, $black-linehight);
+}
+
+a {
+    @include fonts($small-fontsize, $inter-fontfamily, $regular-font-weight, $primary-color, $regular-linehight);
+}

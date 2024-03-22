@@ -1,0 +1,74 @@
+$text-d: none;
+$box-s: border-box;
+$ver-align: top;
+$negative-gx: -15px;
+$gx: 15px;
+$h-py: 15px 0;
+$banner-py: 23px 0 29px 0;
+$bs-py: 100px 0 76px 0;
+$f-py: 10px 0 11px 0;
+$hs-py: 20px 0;
+$customer-py: 25px 0 35px 0;
+
+$d-flex: flex;
+$flex-wrap: wrap;
+$flex-start: flex-start;
+
+//color-variable-start--
+$yellow-color: #FFA726;
+$primary-color: #000;
+$secondary-color: #fff;
+$grey-opacity-color: rgba(0, 0, 0, 0.54);
+$grey-color: #666;
+$dark-black: #111;
+$light-grey-color: #999;
+$Davy-Grey-color: #5F5A54;
+$h-grey-color: #54595F;
+//color-variable-end--
+
+//fontsize-variable-start--
+$s-fontsize: 60px;
+$large-fontsize: 40px;
+$medium-fontsize: 36px;
+$extra-medium-fsize: 24px;
+$h-medium-fontsize: 22px;
+$f-fontsize: 20px;
+$small-fontsize: 16px;
+$extra-small-font-size: 15px;
+//fontsize-variable-end--
+
+//fontfamily-variable-start--
+$inter-fontfamily: Inter;
+$raleway-fontfamily: Raleway;
+$roboto-fontfamily: Roboto;
+$poppins-fontfamily: Poppins;
+//fontfamily-variable-end--
+
+//font-weight-variable-start--
+$extrabold-font-weight: 800;
+$bold-font-weight: 700;
+$semibold-font-weight: 600;
+$medium-font-weight: 500;
+$regular-font-weight: 400;
+$light-font-weight: 300;
+//font-weight-variable-end--
+
+//line-hight-variable-start--
+$black-linehight: 65px;
+$bold-linehight: 51px;
+$extralarge-linehight: 48px;
+$large-linehight: 40px;
+$small-linehight: 25px;
+$btn-linehight: 28px;
+$semismall-linehight: 23px;
+$regular-linehight: 24px;
+$medium-linehight: 30px;
+//line-hight-variable-end--
+
+//breakpoint-start--
+$xl-breakpoint: 1169px;
+$lg-breakpoint: 991px;
+$md-breakpoint: 767px;
+$sm-breakpoint: 575px;
+$xs-breakpoint: 319px;
+//breakpoint-end--
